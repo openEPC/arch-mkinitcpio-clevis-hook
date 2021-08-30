@@ -16,6 +16,9 @@ build() {
     add_binary "tpm2_createprimary"
     add_binary "tpm2_load"
     add_binary "tpm2_unseal"
+    add_binary "tpm2_pcrread"
+    add_binary "tpm2_createpolicy"
+    add_binary  "tpm2_create"
 
     for _LIBRARY in /usr/lib/libtss2-tcti-device.so*; do
         if [ -e "${_LIBRARY}" ]; then
